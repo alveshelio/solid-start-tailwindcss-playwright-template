@@ -1,7 +1,8 @@
 // @refresh reload
+import './root.css';
+
 import { Suspense } from 'solid-js';
 import {
-  useLocation,
   A,
   Body,
   ErrorBoundary,
@@ -12,8 +13,8 @@ import {
   Routes,
   Scripts,
   Title,
+  useLocation,
 } from 'solid-start';
-import './root.css';
 
 export default function Root() {
   const location = useLocation();
