@@ -10,7 +10,12 @@ module.exports = {
     'plugin:solid/recommended',
     'plugin:prettier/recommended',
   ],
-  overrides: [],
+  overrides: [
+    {
+      files: ['e2e/**/*.spec.ts', 'src/**/*.spec.tsx'],
+      extends: ['plugin:playwright/playwright-test'],
+    },
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
