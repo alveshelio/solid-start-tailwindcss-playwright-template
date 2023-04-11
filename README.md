@@ -1,30 +1,12 @@
-# SolidStart
+# SolidStart Starter
 
-Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
+_SolidStart Starter_ aims to be a production ready starter template for [SolidStart](https://start.solidjs.com/getting-started/what-is-solidstart)
 
-## Creating a project
-
-```bash
-# create a new project in the current directory
-npm init solid@latest
-
-# create a new project in my-app
-npm init solid@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Solid apps are built with _adapters_, which optimise your project for deployment to different environments.
-
-By default, `npm run build` will generate a Node app that you can run with `npm start`. To use a different adapter, add it to the `devDependencies` in `package.json` and specify in your `vite.config.js`.
+It comes with:
+- [Typescript](https://www.typescriptlang.org/)
+- [Eslint](https://eslint.org/) and [Prettier](https://prettier.io/)
+- [Vitest](https://vitest.dev/) for unit testing
+- [Playwright](https://playwright.dev/) for e2e testing
+- [Playwright component-testing](https://playwright.dev/docs/test-components) ***experimental*** for component testing
+- [TailwindCss](https://tailwindcss.com/)
+- [@zag-js](https://zagjs.com/) Headless UI components powered by Finite State Machines

@@ -1,6 +1,6 @@
 import { A } from 'solid-start';
 
-import Counter from '@/components/Counter';
+import { Counter } from '@/components/counter/Counter';
 
 export default function About() {
   return (

@@ -8,13 +8,14 @@
     "jsxImportSource": "solid-js",
     "jsx": "preserve",
     "strict": true,
-    "types": ["solid-start/env"],
+    "types": ["@testing-library/jest-dom" ,"solid-start/env", "vitest/globals"],
     "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"]
     }
   },
   "include": [
+    "./setupTests.ts",
     "vite.config.ts",
     ".eslintrc.cjs",
     "src",

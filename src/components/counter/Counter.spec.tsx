@@ -1,6 +1,5 @@
 import { expect, test } from '@playwright/experimental-ct-solid';
-
-import Counter from './Counter';
+import Counter from 'src/components/counter/Counter';
 
 test('Counter should increment', async (props) => {
   // Mount a component. Returns locator pointing to the component.
