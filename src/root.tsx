@@ -21,13 +21,6 @@ export default function Root() {
   const active = (path: string) =>
     path == location.pathname ? 'border-sky-600' : 'border-transparent hover:border-sky-600';
 
-  // TODO needs to find a way to make this work in server side
-  if (import.meta.env.DEV) {
-    import('./mocks/browser').then(({ browser }) => {
-      browser.start();
-    });
-  }
-
   return (
     <Html lang="en">
       <Head>
