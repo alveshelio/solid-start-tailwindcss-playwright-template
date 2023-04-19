@@ -4,16 +4,16 @@ test('has title', async ({ page }) => {
   await page.goto('http://localhost:3000');
 
   // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/SolidStart/);
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Solid Start');
 });
 
 test('counter', async ({ page }) => {
   await page.goto('http://localhost:3000');
 
-  // Click the get started link.
-  await page.getByRole('button', { name: /Clicks:/ }).click();
-  await expect(page.getByRole('button')).toHaveText('Clicks: 1');
+  const counterButton = page.getByRole('button', { name: /Clicks:/ });
+  await counterButton.click();
+  await expect(counterButton).toHaveText('Clicks: 1');
 
-  await page.getByRole('button', { name: /Clicks:/ }).click();
-  await expect(page.getByRole('button')).toHaveText('Clicks: 2');
+  await counterButton.click();
+  await expect(counterButton).toHaveText('Clicks: 2');
 });
