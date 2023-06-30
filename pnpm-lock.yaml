@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@solidjs/meta':
     specifier: ^0.28.4
@@ -8,8 +12,8 @@ dependencies:
     specifier: ^0.8.2
     version: 0.8.2(solid-js@1.7.3)
   '@zag-js/solid':
-    specifier: ^0.5.0
-    version: 0.5.0(solid-js@1.7.3)
+    specifier: ^0.10.3
+    version: 0.10.3(solid-js@1.7.3)
   '@zag-js/toggle':
     specifier: ^0.5.0
     version: 0.5.0
@@ -2250,6 +2254,13 @@ packages:
     resolution: {integrity: sha512-Xc5QmQwY0W3VdkukYVaoujuCmgf0Y2ZbXhIBi0CJ0d8wWRwjkphhJu8l9kDyX4ElpyzvExYbrpTuQoI4BspaVQ==}
     dev: false
 
+  /@zag-js/core@0.10.3:
+    resolution: {integrity: sha512-LuFfEGDJoLEclrsX65UdNtERBN19FpiQekW0ge0PIxORiBSunRaJsy8FJIrg1AMOUD8xPqj3aobx+jltDcWpAw==}
+    dependencies:
+      '@zag-js/store': 0.10.3
+      klona: 2.0.6
+    dev: false
+
   /@zag-js/core@0.5.0:
     resolution: {integrity: sha512-hFQeMsQP274r/0L3n8BV+Esm06kKkxvBVORJ7tfdIqb7gPuGCuh1X88E3VmP/OrxjZA3Ped8MpENqXlEOpUaHw==}
     dependencies:
@@ -2261,16 +2272,22 @@ packages:
     resolution: {integrity: sha512-s2q18k3z3ABAkySc6xK1NLPVIdgZGTLSZxok7yzpCYoywEeCnFvP6K63Q4ONElk74XgO7Eq8KMzIj702LDS+Mg==}
     dev: false
 
-  /@zag-js/solid@0.5.0(solid-js@1.7.3):
-    resolution: {integrity: sha512-mfzAJpNrPjcB2NrIHezpxbgODwc200JdCRDbRpPzFwO+0ELx2GpT9fRTpCccnq/KpR3QUvGpi9AzaHGQ2vDeLw==}
+  /@zag-js/solid@0.10.3(solid-js@1.7.3):
+    resolution: {integrity: sha512-1V4uw128oIQMVvY0BJN5q6hwHKRsi+FxIHgFqRoKFfoVNHRU5L+pzrOR9PwUp4VqQXWvSN8G2D37d1OgrE0vTw==}
     peerDependencies:
       solid-js: '>=1.1.3'
     dependencies:
-      '@zag-js/core': 0.5.0
-      '@zag-js/store': 0.2.8
-      '@zag-js/types': 0.5.0
+      '@zag-js/core': 0.10.3
+      '@zag-js/store': 0.10.3
+      '@zag-js/types': 0.10.3
       hyphenate-style-name: 1.0.4
       solid-js: 1.7.3
+    dev: false
+
+  /@zag-js/store@0.10.3:
+    resolution: {integrity: sha512-sLbYnHJn3hZ24ZJlovnYb2Y5cNrn3zCyI/GT9ACAHs89dQ+Nv4fEe/N6NhhOkNvYixsFc/TFienf7Haeq0q5eg==}
+    dependencies:
+      proxy-compare: 2.5.1
     dev: false
 
   /@zag-js/store@0.2.8:
@@ -2287,6 +2304,12 @@ packages:
       '@zag-js/dom-query': 0.1.4
       '@zag-js/types': 0.5.0
       '@zag-js/utils': 0.3.4
+    dev: false
+
+  /@zag-js/types@0.10.3:
+    resolution: {integrity: sha512-om68xTDOp0GY24ow0DBgRTQMq4M2xpaEmyuS6UT9TqyVZz6L7/rNeuKqJW0swc+NCpKXi/bARdnKFq4PTszAVQ==}
+    dependencies:
+      csstype: 3.1.2
     dev: false
 
   /@zag-js/types@0.5.0:
@@ -2902,6 +2925,10 @@ packages:
 
   /csstype@3.1.1:
     resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
+
+  /csstype@3.1.2:
+    resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
+    dev: false
 
   /damerau-levenshtein@1.0.8:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
@@ -5138,6 +5165,10 @@ packages:
 
   /proxy-compare@2.5.0:
     resolution: {integrity: sha512-f1us0OsVAJ3tdIMXGQx2lmseYS4YXe4W+sKF5g5ww/jV+5ogMadPt+sIZ+88Ga9kvMJsrRNWzCrKPpr6pMWYbA==}
+    dev: false
+
+  /proxy-compare@2.5.1:
+    resolution: {integrity: sha512-oyfc0Tx87Cpwva5ZXezSp5V9vht1c7dZBhvuV/y3ctkgMVUmiAGDVeeB0dKhGSyT0v1ZTEQYpe/RXlBVBNuCLA==}
     dev: false
 
   /psl@1.9.0:
