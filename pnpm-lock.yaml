@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@solidjs/meta':
     specifier: ^0.28.4
@@ -11,8 +15,8 @@ dependencies:
     specifier: ^0.5.0
     version: 0.5.0(solid-js@1.7.3)
   '@zag-js/toggle':
-    specifier: ^0.5.0
-    version: 0.5.0
+    specifier: ^0.12.0
+    version: 0.12.0
   solid-js:
     specifier: ^1.7.3
     version: 1.7.3
@@ -2246,8 +2250,15 @@ packages:
     engines: {node: '>=10.0.0'}
     dev: true
 
-  /@zag-js/anatomy@0.1.4:
-    resolution: {integrity: sha512-Xc5QmQwY0W3VdkukYVaoujuCmgf0Y2ZbXhIBi0CJ0d8wWRwjkphhJu8l9kDyX4ElpyzvExYbrpTuQoI4BspaVQ==}
+  /@zag-js/anatomy@0.12.0:
+    resolution: {integrity: sha512-P7V0DYrPKuWkO8wwB4iobD9W3WAzDJds7w2V5ZERKKkohou/D+6kTz2a2B8ohAImI895uy2WcLo4/G6i1Au/cA==}
+    dev: false
+
+  /@zag-js/core@0.12.0:
+    resolution: {integrity: sha512-U0Nqf0o/2I4VhKCyCNV7txLynaemiIOf4yP3sbl/y0Trz1HE4VHbkqSzPTNKLdRmvMSjDceO9osvXtnIVZFEpA==}
+    dependencies:
+      '@zag-js/store': 0.12.0
+      klona: 2.0.6
     dev: false
 
   /@zag-js/core@0.5.0:
@@ -2257,8 +2268,8 @@ packages:
       klona: 2.0.6
     dev: false
 
-  /@zag-js/dom-query@0.1.4:
-    resolution: {integrity: sha512-s2q18k3z3ABAkySc6xK1NLPVIdgZGTLSZxok7yzpCYoywEeCnFvP6K63Q4ONElk74XgO7Eq8KMzIj702LDS+Mg==}
+  /@zag-js/dom-query@0.12.0:
+    resolution: {integrity: sha512-2VAPD+7N9sBxwHkucQ1B2VfT/0piMvINV2OyGtNL4E7v1TMFOGRUnHuaHyi8vUClanEtLRoHUWXs7oLqla7soA==}
     dev: false
 
   /@zag-js/solid@0.5.0(solid-js@1.7.3):
@@ -2273,20 +2284,32 @@ packages:
       solid-js: 1.7.3
     dev: false
 
+  /@zag-js/store@0.12.0:
+    resolution: {integrity: sha512-19JiBnMa8N7WlGrCJKpHT4ZbhdYdgLdKmSOoyrHyq9I3FEqvSj1v2/ZVuu12NQNwiVwEIyRpUcjDMBdZy+ciIQ==}
+    dependencies:
+      proxy-compare: 2.5.1
+    dev: false
+
   /@zag-js/store@0.2.8:
     resolution: {integrity: sha512-QgBnbYjb5jvcTt0+JCoPJ9YKM9vP1/RR78mkT6fWCIM0N8hnZu4MzQPVKxiopxZ8XIrDbUjFWlJLzL83uiYv2g==}
     dependencies:
       proxy-compare: 2.5.0
     dev: false
 
-  /@zag-js/toggle@0.5.0:
-    resolution: {integrity: sha512-MAzKYzWEFlsnizh+uzqqs9EvMOOjdJIp4TEEmGKxbPDEKyxWaWQRFGp2cGoYBbp3daIOgEajYpdTJDFdAIOTOQ==}
+  /@zag-js/toggle@0.12.0:
+    resolution: {integrity: sha512-aM3Pn03NT48+VsDgkUUymUHd+oZQSq4/3q9Df6dgXVe7GkCUAQgNEOBiGg5G/HWyeSNL/nmSRso4oRhOVIVaqA==}
     dependencies:
-      '@zag-js/anatomy': 0.1.4
-      '@zag-js/core': 0.5.0
-      '@zag-js/dom-query': 0.1.4
-      '@zag-js/types': 0.5.0
-      '@zag-js/utils': 0.3.4
+      '@zag-js/anatomy': 0.12.0
+      '@zag-js/core': 0.12.0
+      '@zag-js/dom-query': 0.12.0
+      '@zag-js/types': 0.12.0
+      '@zag-js/utils': 0.12.0
+    dev: false
+
+  /@zag-js/types@0.12.0:
+    resolution: {integrity: sha512-CjioW4hyGo6a52JvP+XWO6bX9/tBTHwxBB4Np6LvB+6AG+hn7hQzEzWxGSpz0rwzHxH86LSe0MuAeEXaU5kHQQ==}
+    dependencies:
+      csstype: 3.1.2
     dev: false
 
   /@zag-js/types@0.5.0:
@@ -2295,8 +2318,8 @@ packages:
       csstype: 3.1.1
     dev: false
 
-  /@zag-js/utils@0.3.4:
-    resolution: {integrity: sha512-Wz6OsvGsteCmu8uGot5H/xj0QpUzXlmAlDw+d2Lnqz1Y3uWcq36r6EPWfH15HXJXdEDuCameAmdOruZ0s/SVjA==}
+  /@zag-js/utils@0.12.0:
+    resolution: {integrity: sha512-kRPHpeh3cWIudwfAzTcwVrFnZAWpOqAp110EXX6h3TdhYDSG7+vnvT3PulwKDLdtGdn3vVUViolIHP00ZIWCAQ==}
     dev: false
 
   /@zxing/text-encoding@0.9.0:
@@ -2902,6 +2925,10 @@ packages:
 
   /csstype@3.1.1:
     resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
+
+  /csstype@3.1.2:
+    resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
+    dev: false
 
   /damerau-levenshtein@1.0.8:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
@@ -5138,6 +5165,10 @@ packages:
 
   /proxy-compare@2.5.0:
     resolution: {integrity: sha512-f1us0OsVAJ3tdIMXGQx2lmseYS4YXe4W+sKF5g5ww/jV+5ogMadPt+sIZ+88Ga9kvMJsrRNWzCrKPpr6pMWYbA==}
+    dev: false
+
+  /proxy-compare@2.5.1:
+    resolution: {integrity: sha512-oyfc0Tx87Cpwva5ZXezSp5V9vht1c7dZBhvuV/y3ctkgMVUmiAGDVeeB0dKhGSyT0v1ZTEQYpe/RXlBVBNuCLA==}
     dev: false
 
   /psl@1.9.0:
